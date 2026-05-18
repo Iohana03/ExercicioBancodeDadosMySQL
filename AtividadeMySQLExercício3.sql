@@ -31,3 +31,8 @@ WHERE nota < 7.0;
 UPDATE tb_estudantes
 SET nota = 7.0
 WHERE id = 7;
+
+SELECT tb_categorias.descricao, AVG(preco) AS Preço_Médio
+FROM tb_produtos INNER JOIN tb_categorias 
+ON tb_categorias.Id = tb_produtos.categoriaId
+GROUP BY tb_categorias.descricao;
