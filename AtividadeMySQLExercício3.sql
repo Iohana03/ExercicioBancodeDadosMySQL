@@ -27,6 +27,7 @@ WHERE nota > 7.0;
 SELECT * FROM tb_estudantes
 WHERE nota < 7.0;
 
+
 UPDATE tb_estudantes
 SET nota = 7.0
 WHERE id = 7;
